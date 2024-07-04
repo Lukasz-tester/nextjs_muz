@@ -1,8 +1,8 @@
 import { del } from "@vercel/blob";
-import { NextApiRequest } from "next";
-import { NextResponse } from "next/server";
+// import { NextApiRequest } from "next";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function DELETE(req: NextApiRequest, context: any) {
+export async function DELETE(req: NextRequest, context: any) {
     const { params } = context;
     let { url } = params;
 
